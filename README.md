@@ -1,6 +1,6 @@
 # ErrorVdWeek
 
-This repository contains the frontend of a project called "Error van de week" (in Dutch) or in English: "Error of the week". The idea is to create a simple web application where our students can fill in error messages they encounter, which will be ranked with a top 3 of most found errors to make receiving errors appear less scary and put finding them in a positive light. Getting errors can be a learning experience if handled right, so this is an attempt in that direction. Ideally the platform would also support students and teachers to add possible solutions to errors, such that struggling students can be aided in the right direction.
+This repository contains the frontend of a project called "Error van de week" (in Dutch) or in English: "Error of the week". The idea is to create a simple web application where our students can fill in error messages they encounter, which will be ranked in a top 3 of most encountered errors to make receiving errors appear less scary and put finding them in a positive light. Getting errors can be a learning experience if handled correctly, so this is an attempt in that direction. Ideally students and teachers can add possible solutions to errors, such that struggling students can be aided in the right direction.
 
 
 # Angular
