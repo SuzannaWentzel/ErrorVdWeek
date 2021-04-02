@@ -1,0 +1,33 @@
+<div>
+	<button class="btn btn-primary round fixed-right">Ik heb een error!</button>
+
+	<div class="container text-center full-height pt-5">
+		<h1 class="pt-5 mb-md-5">Error van de Week</h1>
+		<div class="row">
+			<div class="col-md-1 col-lg-2 d-none d-md-block"></div>
+			<div class="col-md-10 col-lg-8 d-none d-md-block">
+				<div class="row align-items-end">
+					<div class="col-md-4">
+						<div class="card error-card left m-3 text-success">
+							<p>{{ errors[1]['message'] }}</p>
+						</div>
+						<img class="stage" src="../../assets/images/stage/2nd_place_v2.png">
+					</div>
+					<div class="col-md-4">
+						<div class="card error-card middle m-3 text-success">
+							<p>{{ errors[0]['message'] }}</p>
+						</div>
+						<img class="stage" src="../../assets/images/stage/1st_place.png">
+					</div>
+					<div class="col-md-4">
+						<div class="card error-card right m-3 text-success">
+							<p>{{ errors[2]['message'] }}</p>
+						</div>
+						<img class="stage" src="../../assets/images/stage/3rd_place_v2.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1 col-lg-2 d-none d-md-block"></div>
+		</div>
+	</div>	
+</div>

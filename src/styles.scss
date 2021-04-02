@@ -1,0 +1,16 @@
+@import 'assets/scss/settings';
+@import '~bootstrap/scss/bootstrap';
+
+.btn.btn-primary.round {
+	border-radius: 1.2em;
+	background-image: linear-gradient(to bottom right, theme-color('primary'), theme-color('success'));
+	font-weight: bold;
+	color: black;
+	padding: 0.4rem 1rem;
+	border: none;
+	box-shadow: #c1c1c1a0 0px 4px 12px;
+
+	&:hover {
+		background-image: linear-gradient(to bottom right, theme-color('primary-darker'), theme-color('success-darker'));
+	}
+}
