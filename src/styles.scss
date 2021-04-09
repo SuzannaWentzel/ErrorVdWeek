@@ -14,3 +14,21 @@
 		background-image: linear-gradient(to bottom right, theme-color('primary-darker'), theme-color('success-darker'));
 	}
 }
+
+.modal-content {
+	border: none;
+
+	.modal-header {
+		border-bottom: none;
+	}
+	
+	.modal-footer {
+		border-top: none;
+	}
+}
+
+.card {
+	width: 100%;
+	border: none;
+}
+

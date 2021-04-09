@@ -1,0 +1,50 @@
+<div class="modal-header">
+	<!-- <h4 class="modal-title">Voeg error toe</h4> -->
+	<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+	<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body" *ngIf="addingNew">
+	<form class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-12 col-md-2">
+				<i class="far fa-question-circle"></i>
+			</div>
+			<div class="col-12 col-md-10">
+				<img src="../../../assets/images/error_example.png">
+				<p class="info">
+					In dit voorbeeld is het <strong>type</strong> SyntaxError, en <strong>bericht</strong> unexpected EOF while parsing.
+				</p>
+			</div>
+		</div>
+		<div class="form-group row align-items-center">
+			<div class="col-12 col-md-2">
+				<label for="errorType">Type error:</label>
+			</div>
+			<div class="col-12 col-md-10">
+				<input id="errorType" class="form-control" name="error type">
+			</div>
+		</div>
+		<div class="form-group row align-items-center">
+			<div class="col-12 col-md-2">
+				<label for="errorMessage">Error bericht:</label>
+			</div>
+			<div class="col-12 col-md-10">
+				<input id="errorMessage" class="form-control" name="error bericht">
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-body" *ngIf="!addingNew">
+	<form>
+		<app-error-card *ngFor="let error of errors" [error]="error"></app-error-card>
+	</form>
+</div>
+<div class="modal-footer" *ngIf="addingNew">
+	<button type="button" class="btn btn-link mr-auto" (click)="toggleAddingMode()">&lt; Check of de error niet al bestond</button>
+	<button type="button" class="btn btn-primary round" (click)="addNewError()">Error toevoegen</button>
+</div>
+<div class="modal-footer" *ngIf="!addingNew">
+	<button type="button" class="btn btn-link mr-auto" (click)="toggleAddingMode()">&lt; Voeg een hele nieuwe error toe</button>
+	<button type="button" class="btn btn-primary round" (click)="registerEncounter()">Ik heb deze gezien</button>
+</div>

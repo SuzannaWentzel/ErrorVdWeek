@@ -1,0 +1,19 @@
+@import '../../../assets/scss/settings.scss';
+
+.card {
+	box-shadow: $gray-400 0px 4px 12px;
+
+	p {
+		margin-bottom: 0;
+		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+	}
+}
+
+.counter {
+	height: 3rem;
+	background-color: $success;
+	border-radius: 0 0.25rem 0.25rem 0;
+}
+

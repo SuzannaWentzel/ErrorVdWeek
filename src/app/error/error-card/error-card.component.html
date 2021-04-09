@@ -1,0 +1,20 @@
+<div class="card hand mb-3" (click)="selectCard()">
+	<div class="card-body px-3 py-0 container-fluid">
+		<div class="row g-0 align-items-center">
+			<div class="col-12 col-md-1">
+				<input type="checkbox">
+			</div>
+			<div class="col-12 col-md-3">
+				<p>{{ error['type'] }}</p>
+			</div>
+			<div class="col-12 col-md-7">
+				<p>{{ error['message'] }}</p>
+			</div>
+			<div class="col-12 col-md-1 counter text-center">
+				<div class="row h-100 align-items-center">
+					<p class="col">{{ error['encountered'].length }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
